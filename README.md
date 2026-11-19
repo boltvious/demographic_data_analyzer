@@ -1,69 +1,25 @@
-# Demographic Data Analyzer
+# Demographic Data Analyzer | Python + Pandas
 
-Solusi proyek freeCodeCamp *Data Analysis with Python* — Demographic Data Analyzer.
+Analyzed 32,000+ census records from the 1994 US Census using Python and Pandas to answer 9 business questions about age, education, income, working hours, and country.
 
-## Deskripsi
+## What I did
+- Cleaned and analyzed `adult.data.csv` with Pandas (groupby, filtering, percentage calculation)
+- Answered 9 questions: race distribution, average age, education vs income, minimum working hours, top country for high income, top occupation in India
+- Validated results with unit test - `Ran 1 test - OK`
 
-Proyek ini menganalisis dataset demografi dari database Sensus Penduduk tahun 1994 menggunakan library **Pandas**. Terdapat 9 pertanyaan analisis yang harus dijawab dari dataset `adult.data.csv`.
+## Key Findings
+- Average age of men: 39.4 years
+- Only 16.4% have a Bachelor's degree, but 46.5% of highly educated earn >50K vs 17.4% without higher education
+- Country with highest % of high earners: Iran (41.9%)
+- Top occupation for high earners in India: Prof-specialty
 
-## Struktur Project
+## How this applies to Admin / Finance work
+Same technique I use for finance work:
+Census data -> Expense / SPJ data, Demographic groups -> Vendor / Category, Income >50K -> Expense anomaly / Budget variance.
+I can clean messy Excel / CSV, build monthly reports, and find patterns for management.
 
-| File | Keterangan |
-|------|-----------|
-| `demographic_data_analyzer.py` | Implementasi fungsi `calculate_demographic_data()` menggunakan Pandas |
-| `adult.data.csv` | Dataset Sensus Penduduk 1994 |
-| `main.py` | Entry point: menjalankan analisis data dan unit test |
-| `test_module.py` | Unit test (unittest) untuk memvalidasi hasil analisis |
-| `requirements.txt` | Dependensi (`pandas`) |
-
-## Cara Pakai
-
-```bash
-# Install dependensi (Pandas)
+## How to run
 pip install -r requirements.txt
-
-# Jalankan program + unit test
 python main.py
-```
 
-## 9 Pertanyaan Analisis
-
-1. Berapa banyak orang dari masing-masing ras (race) dalam dataset ini?
-2. Berapa rata-rata umur laki-laki?
-3. Berapa persentase orang yang memiliki gelar Bachelor's?
-4. Berapa persentase orang dengan pendidikan tinggi (Bachelors, Masters, Doctorate) yang berpenghasilan >50K?
-5. Berapa persentase orang tanpa pendidikan tinggi yang berpenghasilan >50K?
-6. Berapa jam kerja minimum seseorang per minggu?
-7. Berapa persentase orang yang bekerja di jam minimum tersebut tetapi berpenghasilan >50K?
-8. Negara mana yang memiliki persentase tertinggi orang berpenghasilan >50K?
-9. Apa pekerjaan (occupation) paling populer bagi mereka yang berpenghasilan >50K di India?
-
-## Contoh Output
-
-```text
-Number of each race:
- race
-White                 27816
-Black                  3124
-Asian-Pac-Islander     1039
-Amer-Indian-Eskimo      311
-Other                   271
-Name: count, dtype: int64
-Average age of men: 39.4
-Percentage with Bachelors degrees: 16.4%
-Percentage with higher education that earn >50K: 46.5%
-Percentage without higher education that earn >50K: 17.4%
-Min work time: 1 hours/week
-Percentage of rich among those who work fewest hours: 10.0%
-Country with highest percentage of rich: Iran
-Highest percentage of rich people in country: 41.9%
-Top occupations in India: Prof-specialty
-```
-
-## Hasil Test
-
-```text
-Ran 1 test in 0.106s
-
-OK
-```
+## Skills: Python, Pandas, Data Cleaning, Data Analysis, Reporting
